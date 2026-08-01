@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Test browser and operating system compatibility test site">
+  <title>CSS Test - Web Test</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+  <script type="text/javascript" src="../common.js"></script>
+</head>
+<body>
+<div id="page">
+
+<div id="header">
+  <h1>Web Test</h1>
+  <p>A small compatibility playground for old and new operating systems.</p>
+</div>
+<div id="nav">
+  <a href="../index.html">Home</a>
+  <a href="../tests/index.html">Tests</a>
+  <a href="../games/index.html">Games</a>
+  <a href="../about.html">About</a>
+</div>
+
+<div id="content">
+
+<h2>CSS rendering test</h2>
+<p class="lead">The content remains readable even when some styles are unsupported.</p>
+<h3>Color blocks</h3>
+<div class="color-row">
+<span style="background:#ffffff;color:#000000">White</span>
+<span style="background:#e15141;color:#ffffff">Red</span>
+<span style="background:#2f9d72;color:#ffffff">Green</span>
+<span style="background:#2f6dbc;color:#ffffff">Blue</span>
+<span style="background:#15223a;color:#ffffff">Navy</span>
+</div>
+<h3>Box model</h3>
+<div class="css-box">120 x 70 content box with padding and a double border.</div>
+<h3>Float and clear</h3>
+<div class="float-left"><strong>Floating box</strong><br>This box should sit to the left of this paragraph on wider screens.</div>
+<p>The paragraph should flow beside the floating box and continue naturally. On browsers without full CSS support, the box may simply appear above the paragraph, which is an acceptable fallback.</p>
+<div class="clear">&nbsp;</div>
+<h3>Optional modern decoration</h3>
+<div class="panel panel-blue">Rounded corners, shadows, and media queries are enhancements. Square corners and a fixed-looking layout are still considered a pass.</div>
+
+</div>
+
+<div id="footer">
+  Built with plain HTML, conservative CSS, and ES3-style JavaScript. No framework, web font, SVG, canvas, fetch, or cookies required.
+</div>
+
+</div>
+</body>
+</html>

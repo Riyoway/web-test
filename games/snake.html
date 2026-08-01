@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Test browser and operating system compatibility test site">
+  <title>Snake - Web Test</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+  <script type="text/javascript" src="../common.js"></script>
+</head>
+<body>
+<div id="page">
+
+<div id="header">
+  <h1>Web Test</h1>
+  <p>A small compatibility playground for old and new operating systems.</p>
+</div>
+<div id="nav">
+  <a href="../index.html">Home</a>
+  <a href="../tests/index.html">Tests</a>
+  <a href="../games/index.html">Games</a>
+  <a href="../about.html">About</a>
+</div>
+
+<div id="content">
+
+<h2>Snake</h2>
+<div class="game-box">
+<p>Score: <strong id="snake-score">0</strong></p>
+<div id="snake-status" class="game-status">Loading board...</div>
+<table id="snakeboard" summary="Snake game board"></table>
+<div class="controls">
+<a class="button button-light" href="#" onclick="return changeSnake(0,-1);">Up</a><br>
+<a class="button button-light" href="#" onclick="return changeSnake(-1,0);">Left</a>
+<a class="button" href="#" onclick="return startSnake();">Start</a>
+<a class="button button-light" href="#" onclick="return changeSnake(1,0);">Right</a><br>
+<a class="button button-light" href="#" onclick="return changeSnake(0,1);">Down</a>
+</div>
+<p><a href="#" onclick="resetSnake(); return false;">Reset game</a></p>
+</div>
+<noscript><div class="panel panel-warn">Snake requires JavaScript.</div></noscript>
+<script type="text/javascript" src="snake.js"></script>
+<script type="text/javascript">buildSnakeBoard();</script>
+
+</div>
+
+<div id="footer">
+  Built with plain HTML, conservative CSS, and ES3-style JavaScript. No framework, web font, SVG, canvas, fetch, or cookies required.
+</div>
+
+</div>
+</body>
+</html>

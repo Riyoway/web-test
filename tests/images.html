@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Test browser and operating system compatibility test site">
+  <title>Image Test - Web Test</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+  <script type="text/javascript" src="../common.js"></script>
+</head>
+<body>
+<div id="page">
+
+<div id="header">
+  <h1>Web Test</h1>
+  <p>A small compatibility playground for old and new operating systems.</p>
+</div>
+<div id="nav">
+  <a href="../index.html">Home</a>
+  <a href="../tests/index.html">Tests</a>
+  <a href="../games/index.html">Games</a>
+  <a href="../about.html">About</a>
+</div>
+
+<div id="content">
+
+<h2>Image format test</h2>
+<p class="lead">All files are served from the same site and require no external CDN.</p>
+<table class="test-table" summary="Image tests">
+<tr><th>Format</th><th>Image</th><th>Expected result</th></tr>
+<tr><td>GIF89a</td><td><img src="../assets/test-animated.gif" width="160" height="90" alt="Animated GIF test"></td><td>A small indicator moves from left to right.</td></tr>
+<tr><td>JPEG</td><td><img src="../assets/test.jpg" width="160" height="90" alt="JPEG gradient test"></td><td>A blue gradient with readable labels.</td></tr>
+<tr><td>PNG</td><td><img src="../assets/test.png" width="160" height="90" alt="PNG transparency test"></td><td>A checker pattern and a semi-transparent circle on capable browsers.</td></tr>
+<tr><td>Missing image</td><td><img src="../assets/this-file-does-not-exist.gif" width="160" height="40" alt="ALT TEXT IS WORKING"></td><td>The alternative text or a broken-image indicator appears.</td></tr>
+</table>
+<p class="small muted">Some very old browsers have incomplete alpha transparency support for PNG. Showing the image without smooth transparency is still a useful result.</p>
+
+</div>
+
+<div id="footer">
+  Built with plain HTML, conservative CSS, and ES3-style JavaScript. No framework, web font, SVG, canvas, fetch, or cookies required.
+</div>
+
+</div>
+</body>
+</html>

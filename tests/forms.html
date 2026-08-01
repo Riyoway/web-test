@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Test browser and operating system compatibility test site">
+  <title>Form Test - Web Test</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+  <script type="text/javascript" src="../common.js"></script>
+</head>
+<body>
+<div id="page">
+
+<div id="header">
+  <h1>Web Test</h1>
+  <p>A small compatibility playground for old and new operating systems.</p>
+</div>
+<div id="nav">
+  <a href="../index.html">Home</a>
+  <a href="../tests/index.html">Tests</a>
+  <a href="../games/index.html">Games</a>
+  <a href="../about.html">About</a>
+</div>
+
+<div id="content">
+
+<h2>Form control test</h2>
+<p class="lead">Submitting this form uses a normal GET request. No JavaScript is required.</p>
+<form method="get" action="form-result.html">
+<div class="form-row"><label for="name">Name</label><input class="text" type="text" id="name" name="name" size="28" value="Test visitor"></div>
+<div class="form-row"><label for="password">Password field</label><input class="text" type="password" id="password" name="password" size="20" value="test"></div>
+<div class="form-row"><label>Checkboxes</label><input type="checkbox" name="feature" value="html" checked> HTML &nbsp; <input type="checkbox" name="feature" value="css"> CSS</div>
+<div class="form-row"><label>Radio buttons</label><input type="radio" name="era" value="classic" checked> Classic &nbsp; <input type="radio" name="era" value="modern"> Modern</div>
+<div class="form-row"><label for="os">Operating system</label><select id="os" name="os"><option>Mac OS</option><option>Windows</option><option>Linux</option><option>Other</option></select></div>
+<div class="form-row"><label for="notes">Notes</label><textarea id="notes" name="notes" rows="4" cols="34">This form is visible.</textarea></div>
+<div class="form-row"><label>&nbsp;</label><input class="button" type="submit" value="Submit test"> <input class="button button-light" type="reset" value="Reset"></div>
+</form>
+
+</div>
+
+<div id="footer">
+  Built with plain HTML, conservative CSS, and ES3-style JavaScript. No framework, web font, SVG, canvas, fetch, or cookies required.
+</div>
+
+</div>
+</body>
+</html>

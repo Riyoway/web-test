@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Test browser and operating system compatibility test site">
+  <title>Home - Web Test</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <script type="text/javascript" src="common.js"></script>
+</head>
+<body onload="initHome()">
+<div id="page">
+
+<div id="header">
+  <h1>Web Test</h1>
+  <p>A small compatibility playground for old and new operating systems.</p>
+</div>
+<div id="nav">
+  <a href="index.html">Home</a>
+  <a href="tests/index.html">Tests</a>
+  <a href="games/index.html">Games</a>
+  <a href="about.html">About</a>
+</div>
+
+<div id="content">
+
+<h2>One site, many eras</h2>
+<p class="lead">Open this page from classic Mac OS, early Windows, Linux, mobile devices, virtual machines, or a modern browser. The core page intentionally uses web technology that remains understandable to very old browsers.</p>
+
+<div class="panel panel-blue">
+  <img class="compat-badge" src="assets/badge.gif" width="88" height="31" alt="Old browser friendly" align="left">
+  <strong>Progressive compatibility:</strong> old browsers receive a clean, usable page; newer browsers add rounded corners, shadows, responsive sizing, and richer diagnostics.
+  <div class="clear">&nbsp;</div>
+</div>
+
+<table class="card-table" summary="Main sections">
+<tr>
+  <td>
+    <h3>Compatibility tests</h3>
+    <p>Check HTML, CSS, JavaScript, forms, images, character encoding, and basic browser behavior.</p>
+    <a class="button" href="tests/index.html">Open tests</a>
+  </td>
+  <td>
+    <h3>Small games</h3>
+    <p>Play Snake, Memory, and a reaction-time game. They use DOM tables and old-style JavaScript instead of canvas.</p>
+    <a class="button" href="games/index.html">Open games</a>
+  </td>
+</tr>
+<tr>
+  <td>
+    <h3>Client information</h3>
+    <p><strong>JavaScript:</strong> <span id="js-state" class="status-bad">Not detected yet</span></p>
+    <p><strong>Platform:</strong> <span id="platform">Unknown</span><br>
+       <strong>Screen:</strong> <span id="screen">Unknown</span></p>
+  </td>
+  <td>
+    <h3>Current browser string</h3>
+    <p id="ua" class="mono small">JavaScript is disabled or unavailable.</p>
+    <p class="small muted" id="clock">No client clock available.</p>
+  </td>
+</tr>
+</table>
+
+<div class="panel panel-warn">
+  <strong>Very old browser note:</strong> the page itself is intentionally simple, but the hosting provider may still require modern HTTPS/TLS before the HTML can be downloaded. A local plain-HTTP test method is included in the README.
+</div>
+
+</div>
+
+<div id="footer">
+  Built with plain HTML, conservative CSS, and ES3-style JavaScript. No framework, web font, SVG, canvas, fetch, or cookies required.
+</div>
+
+</div>
+</body>
+</html>

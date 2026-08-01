@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Test browser and operating system compatibility test site">
+  <title>About - Web Test</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="page">
+
+<div id="header">
+  <h1>Web Test</h1>
+  <p>A small compatibility playground for old and new operating systems.</p>
+</div>
+<div id="nav">
+  <a href="index.html">Home</a>
+  <a href="tests/index.html">Tests</a>
+  <a href="games/index.html">Games</a>
+  <a href="about.html">About</a>
+</div>
+
+<div id="content">
+
+<h2>About this project</h2>
+<p class="lead">Web Test is a simple browser and operating system test site for emulated, virtualized, restored, and modern operating systems.</p>
+<div class="panel panel-blue">
+<h3>Compatibility target</h3>
+<p>The baseline is HTML 4.01 Transitional, CSS 1/2-style layout, standard GIF/JPEG/PNG files, and JavaScript written in an ES3-friendly style. Unsupported decoration should fail harmlessly.</p>
+</div>
+<table class="test-table" summary="Technologies used">
+<tr><th>Used</th><th>Intentionally avoided</th></tr>
+<tr><td>Headings, tables, forms, links, images, floats, basic DOM</td><td>Frameworks, modules, build tools, web fonts, SVG, canvas, fetch, promises</td></tr>
+<tr><td>Explicit <span class="mono">.html</span> links</td><td>Client-side routing and JavaScript-only navigation</td></tr>
+<tr><td>System fonts and same-origin assets</td><td>Third-party CDNs and external dependencies</td></tr>
+</table>
+<p>This makes the project useful as both a real mini-site and a quick diagnostic tool.</p>
+
+</div>
+
+<div id="footer">
+  Built with plain HTML, conservative CSS, and ES3-style JavaScript. No framework, web font, SVG, canvas, fetch, or cookies required.
+</div>
+
+</div>
+</body>
+</html>

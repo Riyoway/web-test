@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Test browser and operating system compatibility test site">
+  <title>HTML Test - Web Test</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
+  <script type="text/javascript" src="../common.js"></script>
+</head>
+<body>
+<div id="page">
+
+<div id="header">
+  <h1>Web Test</h1>
+  <p>A small compatibility playground for old and new operating systems.</p>
+</div>
+<div id="nav">
+  <a href="../index.html">Home</a>
+  <a href="../tests/index.html">Tests</a>
+  <a href="../games/index.html">Games</a>
+  <a href="../about.html">About</a>
+</div>
+
+<div id="content">
+
+<h2>HTML element test</h2>
+<h1>Heading level 1</h1>
+<h2>Heading level 2</h2>
+<h3>Heading level 3</h3>
+<p>This is a paragraph with <strong>strong text</strong>, <em>emphasized text</em>, <u>underlined text</u>, <code>inline code</code>, and a <a href="#anchor-test">local anchor link</a>.</p>
+<blockquote>This blockquote should be visibly indented from the surrounding content.</blockquote>
+<h3>Lists</h3>
+<ul><li>Unordered item one</li><li>Unordered item two</li></ul>
+<ol><li>Ordered item one</li><li>Ordered item two</li></ol>
+<h3>Table</h3>
+<table class="test-table" summary="Sample data">
+<tr><th>System</th><th>Era</th><th>Status</th></tr>
+<tr><td>Classic Mac OS</td><td>1984-2001</td><td>Test candidate</td></tr>
+<tr><td>Windows 98</td><td>1998</td><td>Test candidate</td></tr>
+<tr><td>Modern Linux</td><td>Current</td><td>Test candidate</td></tr>
+</table>
+<pre class="codebox">GET /tests/html.html HTTP/1.0
+Host: example.test
+User-Agent: Your browser</pre>
+<p id="anchor-test" class="panel panel-green"><strong>Anchor target reached.</strong> The local fragment link works.</p>
+
+</div>
+
+<div id="footer">
+  Built with plain HTML, conservative CSS, and ES3-style JavaScript. No framework, web font, SVG, canvas, fetch, or cookies required.
+</div>
+
+</div>
+</body>
+</html>

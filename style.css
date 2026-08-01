@@ -1,0 +1,160 @@
+/* Web Test: intentionally conservative CSS.
+   Core layout works without flexbox, grid, web fonts, SVG, or CSS variables. */
+html, body { margin: 0; padding: 0; }
+body {
+  background: #eef1f5;
+  color: #172033;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+a { color: #1759b8; text-decoration: underline; }
+a:hover, a:focus { color: #0b387d; }
+img { border: 0; }
+#page {
+  width: 92%;
+  max-width: 840px;
+  margin: 24px auto;
+  background: #ffffff;
+  border: 1px solid #cbd2dd;
+  box-shadow: 0 8px 30px #c4cad3;
+}
+#header {
+  background: #15223a;
+  color: #ffffff;
+  padding: 22px 26px 18px 26px;
+  border-bottom: 5px solid #4f8df7;
+}
+#header h1 { margin: 0; padding: 0; font-size: 29px; letter-spacing: -1px; }
+#header p { margin: 4px 0 0 0; color: #d7e3f7; }
+#nav {
+  background: #f7f9fc;
+  border-bottom: 1px solid #d5dbe5;
+  padding: 10px 20px;
+}
+#nav a {
+  display: inline-block;
+  margin: 2px 7px 2px 0;
+  padding: 5px 9px;
+  color: #20324e;
+  text-decoration: none;
+  border: 1px solid #cbd4e2;
+  background: #ffffff;
+}
+#nav a:hover, #nav a:focus { background: #eaf1ff; border-color: #7da7eb; }
+#content { padding: 25px 26px 30px 26px; }
+#footer {
+  padding: 15px 26px;
+  background: #f7f9fc;
+  border-top: 1px solid #d5dbe5;
+  color: #586579;
+  font-size: 12px;
+}
+h1, h2, h3 { line-height: 1.2; }
+h2 { margin: 0 0 14px 0; font-size: 23px; color: #15223a; }
+h3 { margin: 0 0 7px 0; color: #1b3359; }
+p { margin-top: 0; }
+.lead { font-size: 17px; color: #34445f; }
+.hero-table { width: 100%; border-collapse: collapse; margin: 0 0 18px 0; }
+.hero-table td { vertical-align: middle; }
+.hero-copy { padding-right: 24px; }
+.hero-image-cell { width: 280px; text-align: right; }
+.hero-image { display: block; width: 280px; height: 280px; border: 1px solid #cbd2dd; background: #f2f4f8; }
+
+.panel {
+  margin: 16px 0;
+  padding: 16px 18px;
+  border: 1px solid #d2d9e4;
+  background: #fbfcfe;
+  border-radius: 7px;
+}
+.panel-blue { border-left: 5px solid #4f8df7; }
+.panel-green { border-left: 5px solid #2f9d72; }
+.panel-warn { border-left: 5px solid #d78c17; background: #fffaf1; }
+.card-table { width: 100%; border-collapse: separate; border-spacing: 10px; margin: 0 -10px 10px -10px; }
+.card-table td { width: 50%; vertical-align: top; border: 1px solid #d2d9e4; background: #fbfcfe; padding: 16px; }
+.card-table h3 { font-size: 18px; }
+.card-table p { margin-bottom: 10px; }
+.button, input.button {
+  display: inline-block;
+  background: #1f63c6;
+  color: #ffffff;
+  border: 1px solid #174c98;
+  padding: 7px 12px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+.button:hover, .button:focus { background: #174f9e; color: #ffffff; }
+.button-light { background: #ffffff; color: #20324e; border-color: #aab6c8; }
+.button-light:hover { background: #edf3fc; color: #20324e; }
+.status-ok { color: #16704e; font-weight: bold; }
+.status-bad { color: #a33030; font-weight: bold; }
+.muted { color: #68768b; }
+.small { font-size: 12px; }
+.mono { font-family: "Courier New", Courier, monospace; }
+.codebox {
+  overflow: auto;
+  padding: 12px;
+  background: #111927;
+  color: #e8edf5;
+  border: 1px solid #0b111b;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+}
+.test-table { width: 100%; border-collapse: collapse; margin: 12px 0 20px 0; }
+.test-table th, .test-table td { padding: 8px 10px; border: 1px solid #bfc8d6; text-align: left; vertical-align: top; }
+.test-table th { background: #e9eef6; }
+hr { border: 0; border-top: 1px solid #d4dae4; height: 1px; margin: 22px 0; }
+.notice { padding: 8px 10px; border: 1px solid #d2d9e4; background: #f8fafc; }
+.clear { clear: both; height: 1px; overflow: hidden; }
+.float-left { float: left; width: 42%; padding: 12px; margin: 0 16px 12px 0; background: #eaf2ff; border: 1px solid #86a9dd; }
+.css-box { width: 120px; height: 70px; padding: 12px; margin: 8px; border: 4px double #1f63c6; background: #eaf2ff; }
+.color-row span { display: inline-block; width: 74px; padding: 14px 4px; margin: 2px; text-align: center; border: 1px solid #59677b; }
+.form-row { margin: 10px 0; }
+.form-row label { display: inline-block; width: 145px; vertical-align: top; }
+input, select, textarea { font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+input.text, textarea { border: 1px solid #8e9caf; padding: 5px; background: #ffffff; color: #172033; }
+.game-box { text-align: center; padding: 16px; border: 1px solid #cbd4e2; background: #f8fafc; }
+.game-status { min-height: 26px; font-weight: bold; color: #243b5e; }
+.controls { margin: 12px 0; }
+.controls a { margin: 2px; min-width: 20px; text-align: center; }
+#snakeboard { margin: 12px auto; border-collapse: collapse; background: #ffffff; border: 2px solid #293a55; }
+#snakeboard td { width: 17px; height: 17px; padding: 0; border: 1px solid #e3e7ed; font-size: 1px; line-height: 1px; }
+#snakeboard td.snake { background: #2e77d0; }
+#snakeboard td.head { background: #143d73; }
+#snakeboard td.food { background: #e15141; }
+#memoryboard { margin: 12px auto; border-collapse: separate; border-spacing: 5px; }
+#memoryboard td { padding: 0; }
+.memory-tile {
+  display: block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #254a7b;
+  background: #2f6dbc;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+.memory-tile.open { background: #ffffff; color: #17365d; }
+.memory-tile.done { background: #dcecdf; color: #24633f; border-color: #6ca37f; }
+#reactionButton { width: 220px; height: 95px; font-size: 24px; margin: 16px auto; }
+.reaction-wait { background: #b98221; border-color: #7c5513; }
+.reaction-ready { background: #278b5f; border-color: #17633f; }
+.compat-badge { vertical-align: middle; margin-right: 8px; }
+@media screen and (max-width: 620px) {
+  #page { width: 100%; margin: 0; border-left: 0; border-right: 0; }
+  #header, #content, #footer { padding-left: 16px; padding-right: 16px; }
+  .card-table, .card-table tbody, .card-table tr, .card-table td { display: block; width: auto; }
+  .card-table { margin: 0; border-spacing: 0; }
+  .card-table td { margin: 10px 0; }
+  .form-row label { display: block; width: auto; }
+  .hero-table, .hero-table tbody, .hero-table tr, .hero-table td { display: block; width: auto; }
+  .hero-copy { padding-right: 0; }
+  .hero-image-cell { text-align: center; }
+  .hero-image { width: 100%; max-width: 360px; height: auto; margin: 16px auto 0 auto; }
+}
